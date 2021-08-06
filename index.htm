@@ -170,7 +170,6 @@ var url_SS = window.location.href
 var urlll = new URL(url_SS);
 var ccc = urlll.searchParams.get("QRLINK");
 
-alert ccc;
 //var qrcode
 const qrcode1 = window.qrcode;
 const video = document.createElement("video");
@@ -200,7 +199,7 @@ qrcode.callback = res => {
     
 
 //window.location.href = "http://192.168.1.8:8000/Sender.htm?QRLINK=" + res;
-  //alert(ccc + "Sender.htm?QRLINK=" + res);
+  alert(ccc + "Sender.htm?QRLINK=" + res);
  myWindow = window.open(ccc + "Sender.htm?QRLINK=" + res,'_blank');
 setTimeout(function(){myWindow.close();}, 3000);
 
